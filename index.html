@@ -16,6 +16,32 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>01</span>About Natous</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>02</span>Your Benfits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>03</span>Popular Tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"><span>05</span>Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="Logo" class="header__logo" />
@@ -25,7 +51,9 @@
           <span class="heading-primary--main">Outdoors</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
     <main>
@@ -132,7 +160,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -162,7 +190,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -192,7 +220,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -222,7 +250,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -399,28 +427,55 @@
         </div>
       </div>
     </footer>
-    <!-- <section class="grid-test">
-      
- 
-      <div class="row">
-        <div class="col-1-of-3">Col 1 of 3</div>
-        <div class="col-2-of-3">Col 2 of 3</div>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Strat booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            eius, molestiae inventore omnis excepturi consequuntur, illo enim
+            esse provident ad nemo? Totam fugiat distinctio a cupiditate odit
+            culpa maiores nam adipisci nostrum recusandae, soluta quibusdam
+            illo, voluptatem, nemo possimus impedit. Maiores consequuntur
+            corrupti, alias doloribus mollitia quia libero reiciendis corporis,
+            quasi perferendis placeat magni assumenda, voluptatem error harum
+            officiis. Veniam, reiciendis sequi eum ipsum quod eligendi minus
+            amet temporibus animi suscipit voluptas neque. Maxime animi nihil
+            dolore officia itaque, delectus earum fugit quis blanditiis neque
+            hic consectetur nulla accusamus dolores praesentium sapiente
+            voluptatem dicta! Laboriosam aut autem beatae aliquam. Dicta
+            corporis ducimus molestiae labore animi ullam repellat expedita
+            accusamus. Placeat nemo illum deleniti dolore ea accusamus
+            exercitationem ut suscipit consequuntur eos rerum nulla dolor enim,
+            fugit at voluptates vitae accusantium, nisi animi praesentium
+            ducimus mollitia! Minima enim explicabo doloribus assumenda harum
+            placeat consectetur nihil earum quidem at ex vero suscipit corrupti
+            maxime iste aspernatur modi molestias facilis eveniet asperiores,
+            praesentium, neque ratione. Suscipit et ipsam voluptatum iure,
+            numquam molestias sunt ea cumque aspernatur sed sequi, impedit
+            voluptatem alias. Distinctio nisi vel rem facilis pariatur aliquam
+            incidunt? Dolore placeat libero cum fuga distinctio perspiciatis
+            harum culpa nemo quis consequuntur rem reprehenderit a itaque,
+            commodi veritatis, facilis cumque exercitationem deleniti voluptas
+            debitis, quia nobis veniam. Officia, voluptates dolorem? Nulla
+            distinctio officia asperiores sapiente quasi molestias voluptatibus
+            labore. Perferendis, aut dolorem, sequi amet ullam quam ratione nisi
+            iste eius assumenda deleniti molestias aliquid repudiandae beatae
+            explicabo numquam repellendus veniam quasi, omnis suscipit sapiente.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-2-of-4">Col 2 of 4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-3-of-4">Col 3 of 4</div>
-      </div>
-    </section> -->
+    </div>
   </body>
 </html>
